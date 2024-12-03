@@ -73,7 +73,7 @@ export const Navbar = () => {
             width={45}
             src="/starlight_logo.png"
             alt="Starlight Nails"
-            objectfit="cover"
+            object-fit="cover"
           />
             <p className="font-bold text-inherit">Starlight Nails</p>
           </NextLink>
