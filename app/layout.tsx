@@ -51,8 +51,8 @@ export default function RootLayout({
               <Link
                 isExternal
                 className="flex items-center gap-1 text-current"
-                href="https://nextui-docs-v2.vercel.app?utm_source=next-app-template"
-                title="nextui.org homepage"
+                href="https://www.sait.ca/"
+                title="CPSY-301 Software Project: Pre-Capstone Project"
               >
                 <span className="text-default-600">Pre-Capstone project for </span>
                 <p className="text-primary">CPSY-301-E</p>
