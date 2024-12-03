@@ -11,7 +11,7 @@ export default function Home() {
               height={150}  
               src="/starlight_logo.png"
               alt="Starlight Nails"
-              objectfit="cover"
+              object-fit="cover"
               />
       <div className="inline-block max-w-xl text-center justify-center">
 
