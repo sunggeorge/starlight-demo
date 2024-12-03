@@ -1,21 +1,33 @@
 "use client";
-
+import { title, subtitle} from "@/components/primitives";
+import {Image} from "@nextui-org/react";
 import { useUser } from "@clerk/nextjs";
-
-export default function HomePage() {
+export default function Home() {
   const { user } = useUser();
-
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
-      {user && (
-        <p className="text-2xl font-medium mb-4">
-          Hello{" "}
-          <span className="text-blue-500">
-            {user.firstName} {user.lastName}
-          </span>
-        </p>
-      )}
-      <h1 className="text-4xl font-bold">Welcome to Starlight Nails!</h1>
-    </div>
+    <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
+              <Image
+              width={150}
+              height={150}  
+              src="/starlight_logo.png"
+              alt="Starlight Nails"
+              objectfit="cover"
+              />
+      <div className="inline-block max-w-xl text-center justify-center">
+
+        {user && (
+          <section>
+            <span className={title()}>Hello </span>
+            <span className={title({ color: "violet" })}>{user.firstName} {user.lastName}</span>
+            <br />
+          </section>
+        )}
+        <br />
+        <span className={title()}>
+          Welcome to Starlight Nails Salon - Where Beauty Meets Perfection
+        </span>
+      </div>
+
+    </section>
   );
 }
