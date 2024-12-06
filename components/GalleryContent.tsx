@@ -59,7 +59,7 @@ export default function InstaFeed() {
 
       {instagramFeed && (
         <div>
-          <h2 className="text-2xl font-semibold mb-4">Instagram Feed:</h2>
+          <h2 className="text-2xl font-semibold mb-4">Trending Nail Styles from Our Instagram</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {instagramFeed.data.map((post) => (
               <Link
