@@ -56,7 +56,7 @@ export const siteConfig = {
     },
   ],
   links: {
-    github: "https://github.com/nextui-org/nextui",
+    github: "https://github.com/sunggeorge/starlight-demo",
     twitter: "https://twitter.com/getnextui",
     IG: "https://www.instagram.com/starlight_demo/",
     docs: "https://nextui.org",
