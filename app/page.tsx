@@ -1,7 +1,7 @@
 "use client";
 import { WavyBackground } from "@/components/ui/wavy-background";
 import { title, subtitle} from "@/components/primitives";
-import {Image} from "@nextui-org/react";
+import {Image} from "@heroui/react";
 import { useUser } from "@clerk/nextjs";
 export default function Home() {
   const { user } = useUser();
