@@ -1,29 +1,13 @@
 import React from "react";
 import { Button } from "@heroui/button";
 import Link from "next/link";
+import { Navbar } from "@/components/navbar";
 
 export default function NewHomepage() {
   return (
     <div className="min-h-screen bg-[#FAF3EB]">
-      {/* Header */}
-      <header className="bg-white shadow-md py-4 px-6 flex justify-between items-center">
-        <div className="flex items-center space-x-4">
-          <Link href="/new-homepage">
-            <img src="/logo.png" alt="Starlight Nails" className="h-12 cursor-pointer" />
-          </Link>
-          <nav className="hidden md:flex space-x-6">
-            <Link href="/services" className="text-gray-700 hover:text-pink-500">Services</Link>
-            <Link href="/gallery" className="text-gray-700 hover:text-pink-500">Gallery</Link>
-            <Link href="/contact-us" className="text-gray-700 hover:text-pink-500">Contact Us</Link>
-          </nav>
-        </div>
-        <div className="flex items-center space-x-4">
-          <Link href="/login" className="text-gray-700 hover:text-pink-500">Sign In / Sign Up</Link>
-          <Link href="/booking">
-            <Button className="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-lg">Booking</Button>
-          </Link>
-        </div>
-      </header>
+      {/* HeroUI Navbar , but going to remove the following block*/}
+      <Navbar />    
 
       {/* Hero Section */}
       <section className="text-center py-20 px-6">
